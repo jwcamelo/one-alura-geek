@@ -1,0 +1,5 @@
+.cabecalho__busca{
+    background: url("../../assets/img/busca.svg") center / cover no-repeat;
+    width: 24px;
+    height: 24px;
+}

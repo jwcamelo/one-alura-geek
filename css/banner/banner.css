@@ -1,0 +1,5 @@
+.banner{
+    background: url("../../assets/img/banner.png") center / cover no-repeat;
+    height: 192px;
+    align-items: flex-end;
+}

@@ -1,0 +1,5 @@
+.cabecalho__logo{
+    background: url("../../assets/img/Logo.svg") center / cover no-repeat;
+    height: 28px;
+    width: 100px;
+}

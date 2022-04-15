@@ -3,3 +3,12 @@
     height: 28px;
     width: 100px;
 }
+
+@media screen and (min-width: 1080px){
+    .cabecalho__logo{
+        background: url("../../assets/img/logo-maior.svg") center / cover no-repeat;
+        height: 50px;
+        width: 176px;
+    }
+
+}

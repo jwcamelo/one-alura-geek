@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Login</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__btn.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__busca.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__logo.css">
+    <link rel="stylesheet" href="css/contato/contato.css">
+    <link rel="stylesheet" href="css/contato/contato__btn.css">
+    <link rel="stylesheet" href="css/contato/contato__cabecalho.css">
+    <link rel="stylesheet" href="css/contato/contato__campo.css">
+    <link rel="stylesheet" href="css/contato/contato__link.css">
+    <link rel="stylesheet" href="css/contato/contato__logo.css">
+    <link rel="stylesheet" href="css/contato/contato__main.css">
+    <link rel="stylesheet" href="css/contato/contato__msg.css">
+    <link rel="stylesheet" href="css/login/login.css">
+    <link rel="stylesheet" href="css/login/login__btn.css">
+    <link rel="stylesheet" href="css/login/login__campo.css">
+    <link rel="stylesheet" href="css/login/login__principal.css">
+    <link rel="stylesheet" href="css/login/login__titulo.css">
+
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <a href="index.html">
+            <div class="cabecalho__logo"></div>
+        </a>
+        </div>
+        <div class="cabecalho__btn">
+            <a href="login.html"><button class="cabecalho__btn--botao">Login</button></a>
+        </div>
+        <div class="cabecalho__busca">
+            <input class="campo__busca" type="text" placeholder="O que deseja encontrar?">
+            <div class="icone__busca">
+            </div>
+        </div>
+    </header>
+    <section class="login">
+        <main class="login__principal">
+            <h2 id="login__titulo">Iniciar Sessão</h2>
+            <input class="login__campo" type="text" placeholder="Escreva seu nome">
+            <input class="login__campo" type="text" placeholder="Escreva sua senha">
+            <button class="login__btn">Entrar</button>
+        </main>
+    </section>
+    <section class="contato container">
+        <header class="contato__cabecalho">
+            <div class="contato__logo"></div>
+            <nav class="contato__link">
+                <ul class="link__lista">
+                    <li class="link_item">Quem somos nós</li>
+                    <li class="link_item">Política de privacidade</li>
+                    <li class="link_item">Programa de fidelidade</li>
+                    <li class="link_item">Nossas lojas</li>
+                    <li class="link_item">Quero ser um franqueado</li>
+                    <li class="link_item">Anuncie aqui</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contato__main">
+            <h2 class="contato__titulo">Fale conosco</h2>
+            <form action="#" class="contato__form">
+                <div class="contato__campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <textarea placeholder="Escreva sua mensagem" id="contato__msg" cols="40" rows="5"></textarea>
+                <button class="contato__btn">Mensagem</button>
+            </form>
+        </main>
+    </section>
+</body>
+
+<footer>
+    <p>Desenvolvido por Jhonatan W Camêlo<br>2022</p>
+</footer>
+
+
+</html>

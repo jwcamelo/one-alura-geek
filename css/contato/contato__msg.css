@@ -1,0 +1,9 @@
+#contato__msg{
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    
+}

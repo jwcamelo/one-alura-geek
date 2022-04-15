@@ -1,0 +1,17 @@
+.contato{
+    background-color:#EAF2FD;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px){
+    .contato{
+        display: flex;
+        align-items: flex-start;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .contato{
+        justify-content: space-between;
+    }
+}

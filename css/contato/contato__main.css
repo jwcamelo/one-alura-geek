@@ -1,0 +1,12 @@
+@media screen and (min-width: 768px){
+    .contato__main{
+        width: 60%;
+        padding-top: 12px;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .contato__main{
+        width: 45%;
+    }
+}

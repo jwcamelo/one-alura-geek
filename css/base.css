@@ -1,11 +1,40 @@
-.body{
-    font-family: 'Raleway', sans-serif;
+body {
+  font-family: "Raleway", sans-serif;
 }
 
-.container{
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 1rem;
-    width: 100%;
+footer {
+  text-align: center;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 1rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    padding: 1rem 4rem;
+    margin-bottom: 1rem;
+  }
 }

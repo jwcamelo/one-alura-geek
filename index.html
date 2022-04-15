@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AluraGeek</title>
+    <title>AluraGeek | Home</title>
     <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,18 +23,50 @@
     <link rel="stylesheet" href="css/banner/banner__titulo.css">
     <link rel="stylesheet" href="css/banner/banner__descricao.css">
     <link rel="stylesheet" href="css/banner/banner__btn.css">
+    <link rel="stylesheet" href="css/starwars/starwars.css">
+    <link rel="stylesheet" href="css/starwars/starwars__link.css">
+    <link rel="stylesheet" href="css/starwars/starwars__titulo.css">
+    <link rel="stylesheet" href="css/starwars/starwars__cabecalho.css">
+    <link rel="stylesheet" href="css/starwars/starwars__principal.css">
+    <link rel="stylesheet" href="css/card/card.css">
+    <link rel="stylesheet" href="css/card/card__link.css">
+    <link rel="stylesheet" href="css/card/card__img.css">
+    <link rel="stylesheet" href="css/card/card__produto.css">
+    <link rel="stylesheet" href="css/card/card__valor.css">
+    <link rel="stylesheet" href="css/consoles/consoles.css">
+    <link rel="stylesheet" href="css/consoles/consoles__principal.css">
+    <link rel="stylesheet" href="css/consoles/consoles__titulo.css">
+    <link rel="stylesheet" href="css/consoles/consoles__link.css">
+    <link rel="stylesheet" href="css/consoles/consoles__cabecalho.css">
+    <link rel="stylesheet" href="css/diversos/diversos__cabecalho.css">
+    <link rel="stylesheet" href="css/diversos/diversos__link.css">
+    <link rel="stylesheet" href="css/diversos/diversos__principal.css">
+    <link rel="stylesheet" href="css/diversos/diversos__titulo.css">
+    <link rel="stylesheet" href="css/contato/contato__logo.css">
+    <link rel="stylesheet" href="css/contato/contato.css">
+    <link rel="stylesheet" href="css/contato/contato__cabecalho.css">
+    <link rel="stylesheet" href="css/contato/contato__link.css">
+    <link rel="stylesheet" href="css/contato/contato__msg.css">
+    <link rel="stylesheet" href="css/contato/contato__btn.css">
+    <link rel="stylesheet" href="css/contato/contato__campo.css">
+    <link rel="stylesheet" href="css/contato/contato__main.css">
 
 </head>
 
 <body>
     <header class="cabecalho container">
-        <div class="cabecalho__logo">
-        </div>
+        <a href="index.html">
+            <div class="cabecalho__logo"></div>
+        </a>
         <div class="cabecalho__btn">
-            <a><button class="cabecalho__btn--botao">Login</button></a>
+            <a href="login.html"><button class="cabecalho__btn--botao">Login</button></a>
         </div>
         <div class="cabecalho__busca">
+            <input class="campo__busca" type="text" placeholder="O que deseja encontrar?">
+            <div class="icone__busca">
+            </div>
         </div>
+
     </header>
     <section class="banner container">
         <div>
@@ -43,6 +75,87 @@
             <button class="banner__btn">Ver Consoles</button>
         </div>
     </section>
+    <section class="starwars container">
+        <header class="starwars__cabecalho">
+            <h1 class="starwars__titulo">Star Wars</h1>
+            <a href="" class="starwars__link">Ver tudo <img class="starwars__link--icone" src="assets/img/link.svg"
+                    alt=""></a>
+        </header>
+        <main class="starwars__principal">
+
+        </main>
+    </section>
+    <section class="consoles container">
+        <header class="consoles__cabecalho">
+            <h1 class="consoles__titulo">Consoles</h1>
+            <a href="" class="consoles__link">Ver tudo <img src="assets/img/link.svg" alt=""></a>
+        </header>
+        <main class="consoles__principal">
+
+        </main>
+    </section>
+    <section class="diversos container">
+        <header class="diversos__cabecalho">
+            <h1 class="diversos__titulo">Diversos</h1>
+            <a href="" class="diversos__link">Ver tudo <img src="assets/img/link.svg" alt=""></a>
+        </header>
+        <main class="diversos__principal">
+            <div class="card">
+                <img class="card__img" src="assets/img/camisa-atari.png" alt="camisa atari">
+                <h3 class="card__produto">Camisa Atari</h3>
+                <h3 class="card__valor">R$ 60,00</h3>
+                <a class="card__link">Ver produto</a>
+            </div>
+            <div class="card">
+                <img class="card__img" src="assets/img/camisa-snes.png" alt="camisa snes">
+                <h3 class="card__produto">Camisa SNES</h3>
+                <h3 class="card__valor">R$ 60,00</h3>
+                <a class="card__link">Ver produto</a>
+            </div>
+            <div class="card">
+                <img class="card__img" src="assets/img/sonic.png" alt="Sonic">
+                <h3 class="card__produto">Console XYZ</h3>
+                <h3 class="card__valor">R$ 60,00</h3>
+                <a class="card__link">Ver produto</a>
+            </div>
+            <div class="card">
+                <img class="card__img" src="assets/img/timer.png" alt="relógio">
+                <h3 class="card__produto">Controle RST</h3>
+                <h3 class="card__valor">R$ 60,00</h3>
+                <a class="card__link">Ver produto</a>
+            </div>
+        </main>
+    </section>
+    <section class="contato container">
+        <header class="contato__cabecalho">
+            <div class="contato__logo"></div>
+            <nav class="contato__link">
+                <ul class="link__lista">
+                    <li class="link_item">Quem somos nós</li>
+                    <li class="link_item">Política de privacidade</li>
+                    <li class="link_item">Programa de fidelidade</li>
+                    <li class="link_item">Nossas lojas</li>
+                    <li class="link_item">Quero ser um franqueado</li>
+                    <li class="link_item">Anuncie aqui</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contato__main">
+            <h2 class="contato__titulo">Fale conosco</h2>
+            <form action="#" class="contato__form">
+                <div class="contato__campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <textarea placeholder="Escreva sua mensagem" id="contato__msg" cols="40" rows="5"></textarea>
+                <button class="contato__btn">Mensagem</button>
+            </form>
+        </main>
+    </section>
+    <script src="js/card.js"></script>
 </body>
+<footer>
+    <p>Desenvolvido por Jhonatan W Camêlo<br>2022</p>
+</footer>
 
 </html>

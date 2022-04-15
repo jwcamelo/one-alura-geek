@@ -1,0 +1,6 @@
+.contato__link li{
+    list-style: none;
+    margin-bottom: 15px;
+    color: #464646;
+    font-weight: 500;
+}

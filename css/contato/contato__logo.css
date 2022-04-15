@@ -1,0 +1,13 @@
+.contato__logo{
+    background: url("../../assets/img/logo-maior.svg") center / cover no-repeat;
+    height: 50px;
+    margin: 0 auto;
+    width: 175px;
+}
+
+@media screen and (min-width: 768px) {
+    .contato__logo{
+        margin: 0;
+    }
+    
+}

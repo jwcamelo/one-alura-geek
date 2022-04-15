@@ -1,5 +1,42 @@
 .cabecalho__busca{
+    display: flex;
+}
+
+.campo__busca{
+    background-color: #F5F5F5;
+    outline: none;
+    border: none;
+    display: none;
+    
+}
+
+.icone__busca{
     background: url("../../assets/img/busca.svg") center / cover no-repeat;
     width: 24px;
     height: 24px;
+}
+
+@media screen and (min-width: 768px){
+    .cabecalho__busca{
+        border-radius: 20px;
+        box-sizing: border-box;
+        background-color: #F5F5F5;
+        height: 40px;
+        justify-content: space-between;
+        margin-right: 20%;
+        padding: 8px 16px;
+        width: 300px;
+    }
+
+    .campo__busca{
+        display: block;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .cabecalho__busca{
+        margin-right: 20%;
+        width: 400px;
+    }
 }

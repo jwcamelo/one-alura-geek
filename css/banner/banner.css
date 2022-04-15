@@ -3,3 +3,10 @@
     height: 192px;
     align-items: flex-end;
 }
+
+@media screen and (min-width: 1080px){
+    .banner{
+        height: 350px;
+        padding-bottom: 25px;
+    }
+}

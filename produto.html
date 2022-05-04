@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__btn.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__busca.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__logo.css">
+    <link rel="stylesheet" href="css/produto/produto.css">
+    <link rel="stylesheet" href="css/produto/produto__img.css">
+    <!-- <link rel="stylesheet" href="css/produto/produto__titulo.css"> -->
+    <!-- <link rel="stylesheet" href="css/produto/produto__preco.css">
+    <link rel="stylesheet" href="css/produto/produto__descricao.css"> -->
+
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <a href="index.html">
+            <div class="cabecalho__logo"></div>
+        </a>
+        <div class="cabecalho__btn">
+            <a href="login.html"><button class="cabecalho__btn--botao">Login</button></a>
+        </div>
+        <div class="cabecalho__busca">
+            <input class="campo__busca" type="text" placeholder="O que deseja encontrar?">
+            <div class="icone__busca">
+            </div>
+        </div>
+
+    </header>
+    <section class="produto">
+        <div>
+            <img class="produto__img" src="" alt="">
+            <h1 class="produto__titulo"></h1>
+            <h3 class="produto__preco"></h3>
+            <p class="produto__descricao" produto-descricao></p>
+        </div>
+    </section>
+    <script src="js/carregarProduto.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Cadastrar Produto</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__btn.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__busca.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__logo.css">
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <a href="index.html">
+            <div class="cabecalho__logo"></div>
+        </a>
+        <div class="cabecalho__btn">
+            <a href="login.html"><button class="cabecalho__btn--botao">Login</button></a>
+        </div>
+        <div class="cabecalho__busca">
+            <input class="campo__busca" type="text" placeholder="O que deseja encontrar?">
+            <div class="icone__busca">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form action="#">
+            <label for="imagem-produto">Informe a url da imagem</label>
+            <input type="text" id="imagem-produto">
+            <label for="nome-produto">Informe o nome do produto</label>
+            <input type="text" id="nome-produto">
+            <label for="preco-produto">Informe o preco do produto</label>
+            <input type="text" id="preco-produto">
+            <label for="descricao-produto">Informe a descricao do produto</label>
+            <input type="text" id="descricao-produto">
+            <label for="categoria-produto">Informe a categoria</label>
+            <input type="text" id="categoria-produto">
+
+        </form>
+        <button onclick="novoProduto()" id="btn-cadastrar-produto">Cadastrar</button>
+        <div class="testeCategoria">teste</div>
+    </main>
+    <script src="js/card.js"></script>
+</body>
+
+</html>

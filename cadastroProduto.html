@@ -44,32 +44,29 @@
     <main>
         <form class="criar__form" action="#">
             <div class="criar__div imagem">
-                <label for="imagem-produto">Informe a url da imagem</label>
-                <input class="criar__campo" type="text" id="imagem-produto">
+                <label for="imagem-produto">Imagem</label>
+                <input class="criar__imagem" type="file" id="imagem-produto">
             </div>
             <div class="criar__div nome">
-                <label for="nome-produto">Informe o nome do produto</label>
+                <label for="nome-produto">Nome</label>
                 <input class="criar__campo" type="text" id="nome-produto">
             </div>
             <div class="criar__div preco">
-                <label for="preco-produto">Informe o preco do produto</label>
-                <input class="criar__campo" type="text" id="preco-produto">
+                <label for="preco-produto">Preço</label>
+                <input class="criar__campo" type="money" id="preco-produto">
             </div>
             <div class="criar__div categoria">
-                <label for="categoria-produto">Informe a categoria</label>
+                <label for="categoria-produto">Categoria</label>
                 <input class="criar__campo" type="text" id="categoria-produto">
             </div>
             <div class="criar__div descricao">
-                <label for="descricao-produto">Informe a descricao do produto</label>
+                <label for="descricao-produto">Descrição</label>
                 <input class="criar__campo" type="text" id="descricao-produto">
             </div>
-
             <button onclick="novoProduto()" class="criar__btn" id="btn-cadastrar-produto">Cadastrar</button>
         </form>
-
-
     </main>
-    <script src="js/card.js"></script>
+    <script src="./js/novoProduto.js"></script>
 </body>
 
 </html>

@@ -1,18 +1,46 @@
-const novoProduto = () => {
-  let imagem = document.querySelector("#imagem-produto").value;
-  let nome = document.querySelector("#nome-produto").value;
-  let preco = document.querySelector("#preco-produto").value;
-  let descricao = document.querySelector("#descricao-produto").value;
-  let categoria = document.querySelector("#categoria-produto").value;
+let inputImagem = document.querySelector("#imagem-produto");
+var urlImagem;
+if (inputImagem) {
+  inputImagem.addEventListener("change", (img) => {
+    const reader = new FileReader();
+    const arquivo = img.target.files.item(0);
 
-  const dadosProduto = {
-    imagem,
-    nome,
-    preco,
-    descricao,
-    categoria,
-  };
+    reader.readAsDataURL(arquivo);
+    reader.addEventListener("load", () => {
+      urlImagem = reader.result;
+    });
+  });
+}
 
-  const dadosAtualizados = [...produtos, dadosProduto];
+const novoProduto = (() => {
+  const produtos = JSON.parse(localStorage.getItem("produtos"));
+  let nome = document.querySelector("#nome-produto");
+  let preco = document.querySelector("#preco-produto");
+  let descricao = document.querySelector("#descricao-produto");
+  let categoria = document.querySelector("#categoria-produto");
+  let imagem = urlImagem;
+
+  const produtoCriado = {
+    imagem: imagem,
+    nome: nome.value,
+    preco: `R$ ${preco.value}`,
+    descricao: descricao.value,
+    categoria: categoria.value
+  }
+
+  dadosAtualizados = [...produtos, produtoCriado];
+
   localStorage.setItem("produtos", JSON.stringify(dadosAtualizados));
-};
+
+  alert("Produto Cadastrado");
+
+  nome.value = "";
+  preco.value = "";
+  descricao.value = "";
+  categoria.value = "";
+  inputImagem.value = null;
+
+});
+
+
+

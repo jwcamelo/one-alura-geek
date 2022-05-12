@@ -3,6 +3,20 @@
   box-shadow: 0px 2px 2px 0px #00000040;
   height: 40px;
   outline: none;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 2px;
+}
+
+.categoria {
+  width: 37.5%;
+}
+
+.preco {
+  width: 37.5%;
+  margin-right: 5%;
+}
+
+.descricao,
+.nome,
+.imagem {
+  width: 80%;
 }

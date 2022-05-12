@@ -16,6 +16,10 @@ a:hover {
   cursor: pointer;
 }
 
+label {
+  font-weight: 500;
+}
+
 .container {
   box-sizing: border-box;
   display: flex;

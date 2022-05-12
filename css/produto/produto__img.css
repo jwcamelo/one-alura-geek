@@ -1,5 +1,12 @@
 .produto__img {
-    width: 50%;
-    align-self: center;
-    margin: auto;
+  width: 50%;
+  align-self: center;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .produto__img {
+    width: 35%;
+    margin: 0;
+  }
 }

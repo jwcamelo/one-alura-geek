@@ -1,10 +1,6 @@
-.produto {
-    border: 1px solid black;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 100%;
+@media screen and (min-width: 768px) {
+  .produto__img {
+    width: 255px;
+    margin: 0;
+  }
 }

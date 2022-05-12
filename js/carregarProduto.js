@@ -3,25 +3,21 @@ const titulo = document.querySelector(".produto__titulo");
 const img = document.querySelector(".produto__img");
 const preco = document.querySelector(".produto__preco");
 const descricao = document.querySelector(".produto__descricao");
+const similares = document.querySelector(".similares__principal");
 
 carregarProduto(nome);
 
 function carregarProduto(nome) {
-    let produtos = JSON.parse(localStorage.getItem("produtos"));
+  let produtos = JSON.parse(localStorage.getItem("produtos"));
 
-    produtos.forEach(produto => {
-
-        if (produto.nome === nome) {
-            console.log(produto);
-
-            titulo.innerHTML = produto.nome;
-            img.setAttribute("src", produto.imagem);
-            preco.innerHTML = produto.preco;
-            descricao.innerHTML = produto.descricao;
-        }
-    });
-
+  produtos.forEach((produto) => {
+    if (produto.nome === nome) {
+      console.log(produto);
+      titulo.innerHTML = produto.nome;
+      img.setAttribute("src", produto.imagem);
+      preco.innerHTML = produto.preco;
+      descricao.innerHTML = produto.descricao;
+      preencherContainer(similares, produto.categoria, produto.nome);
+    }
+  });
 }
-
-
-

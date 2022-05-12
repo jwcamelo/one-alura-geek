@@ -1,6 +1,21 @@
-.card__link{
-    color: #2A7AE4;
-    font-size: 14px;
-    font-weight: 700; 
-    text-decoration: none;
+.card__link {
+  color: #2a7ae4;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card__link-editar {
+  color: #2ae430;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.card__link-excluir {
+  color: #e46b2a;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
 }

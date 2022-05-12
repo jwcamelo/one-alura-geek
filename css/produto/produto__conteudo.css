@@ -1,0 +1,5 @@
+@media screen and (min-width: 768px) {
+  .produto__conteudo {
+    width: 60%;
+  }
+}

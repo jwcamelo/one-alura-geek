@@ -21,9 +21,24 @@
     <link rel="stylesheet" href="css/cabecalho/cabecalho__logo.css">
     <link rel="stylesheet" href="css/produto/produto.css">
     <link rel="stylesheet" href="css/produto/produto__img.css">
-    <!-- <link rel="stylesheet" href="css/produto/produto__titulo.css"> -->
-    <!-- <link rel="stylesheet" href="css/produto/produto__preco.css">
-    <link rel="stylesheet" href="css/produto/produto__descricao.css"> -->
+    <link rel="stylesheet" href="css/produto/produto__conteudo.css">
+    <link rel="stylesheet" href="css/produto/produto__titulo.css">
+    <link rel="stylesheet" href="css/similares/similares__principal.css">
+    <link rel="stylesheet" href="css/similares/similares__titulo.css">
+    <link rel="stylesheet" href="css/similares/similares__cabecalho.css">
+    <link rel="stylesheet" href="css/card/card.css">
+    <link rel="stylesheet" href="css/card/card__link.css">
+    <link rel="stylesheet" href="css/card/card__produto.css">
+    <link rel="stylesheet" href="css/card/card__valor.css">
+    <link rel="stylesheet" href="css/contato/contato__logo.css">
+    <link rel="stylesheet" href="css/contato/contato.css">
+    <link rel="stylesheet" href="css/contato/contato__cabecalho.css">
+    <link rel="stylesheet" href="css/contato/contato__link.css">
+    <link rel="stylesheet" href="css/contato/contato__msg.css">
+    <link rel="stylesheet" href="css/contato/contato__btn.css">
+    <link rel="stylesheet" href="css/contato/contato__campo.css">
+    <link rel="stylesheet" href="css/contato/contato__main.css">
+
 
 </head>
 
@@ -42,15 +57,55 @@
         </div>
 
     </header>
-    <section class="produto">
-        <div>
-            <img class="produto__img" src="" alt="">
+    <section class="produto container">
+        <img class="produto__img" src="" alt="">
+        <div class="produto__conteudo">
             <h1 class="produto__titulo"></h1>
             <h3 class="produto__preco"></h3>
             <p class="produto__descricao" produto-descricao></p>
         </div>
+
     </section>
-    <script src="js/carregarProduto.js"></script>
+    <section class="similares container">
+        <header class="similares__cabecalho">
+            <h1 class="similares__titulo">Produtos similares</h1>
+        </header>
+        <main class="similares__principal">
+
+        </main>
+    </section>
+    <section class="contato container">
+        <header class="contato__cabecalho">
+            <div class="contato__logo"></div>
+            <nav class="contato__link">
+                <ul class="link__lista">
+                    <li class="link_item">Quem somos nós</li>
+                    <li class="link_item">Política de privacidade</li>
+                    <li class="link_item">Programa de fidelidade</li>
+                    <li class="link_item">Nossas lojas</li>
+                    <li class="link_item">Quero ser um franqueado</li>
+                    <li class="link_item">Anuncie aqui</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="contato__main">
+            <h2 class="contato__titulo">Fale conosco</h2>
+            <form action="#" class="contato__form">
+                <div class="contato__campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <textarea placeholder="Escreva sua mensagem" id="contato__msg" cols="40" rows="5"></textarea>
+                <button class="contato__btn">Mensagem</button>
+            </form>
+        </main>
+    </section>
+    <script type=module src="js/carregarProduto.js"></script>
+    <script src="js/preencherContainer.js"></script>
+    <script src="js/selecionarCategoria.js"></script>
 </body>
+<footer>
+    <p>Desenvolvido por Jhonatan W Camêlo<br>2022</p>
+</footer>
 
 </html>

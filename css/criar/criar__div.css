@@ -1,0 +1,12 @@
+.criar__div {
+  display: flex;
+  flex-direction: column;
+}
+
+.imagem {
+  width: 80%;
+  height: 150px;
+}
+.descricao {
+  width: 100%;
+}

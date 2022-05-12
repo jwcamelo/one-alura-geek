@@ -1,22 +1,22 @@
-.card{
-    margin-bottom: 5px;
+.card {
+  margin-bottom: 5px;
 }
 
-.card img{
-    height: 174px;
-    width: 156px;
+.card img {
+  height: 174px;
+  width: 156px;
 }
 
 @media screen and (min-width: 768px) {
-    .card img{
-        height: 174px;
-        width: 164px;
-    }
+  .card img {
+    height: 174px;
+    width: 164px;
+  }
 }
 
-@media screen and (min-width: 1080px){
-    .card img{
-        height: 176px;
-        width: 174px;
-    }
+@media screen and (min-width: 1080px) {
+  .card img {
+    height: 176px;
+    width: 174px;
+  }
 }

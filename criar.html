@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek | Cadastrar Produto</title>
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__btn.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__busca.css">
+    <link rel="stylesheet" href="css/cabecalho/cabecalho__logo.css">
+    <link rel="stylesheet" href="css/criar/criar__campo.css">
+    <link rel="stylesheet" href="css/criar/criar__form.css">
+    <link rel="stylesheet" href="css/criar/criar__div.css">
+    <link rel="stylesheet" href="css/criar/criar__btn.css">
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <a href="index.html">
+            <div class="cabecalho__logo"></div>
+        </a>
+        <div class="cabecalho__btn">
+            <a href="login.html"><button class="cabecalho__btn--botao">Login</button></a>
+        </div>
+        <div class="cabecalho__busca">
+            <input class="campo__busca" type="text" placeholder="O que deseja encontrar?">
+            <div class="icone__busca">
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <form class="criar__form" action="#">
+            <div class="criar__div imagem">
+                <label for="imagem-produto">Imagem?</label>
+                <input class="criar__imagem" type="file" accept="image/*,.pdf" id="imagem-produto">
+            </div>
+            <div class="criar__div nome">
+                <label for="nome-produto">Nome</label>
+                <input class="criar__campo" type="text" id="nome-produto">
+            </div>
+            <div class="criar__div preco">
+                <label for="preco-produto">Preço</label>
+                <input class="criar__campo" type="money" id="preco-produto">
+            </div>
+            <div class="criar__div categoria">
+                <label for="categoria-produto">Categoria</label>
+                <input class="criar__campo" type="text" id="categoria-produto">
+            </div>
+            <div class="criar__div descricao">
+                <label for="descricao-produto">Descrição</label>
+                <input class="criar__campo" type="text" id="descricao-produto">
+            </div>
+            <button onclick="novoProduto()" class="criar__btn" id="btn-cadastrar-produto">Cadastrar</button>
+        </form>
+    </main>
+    <script src="./js/criarProduto.js"></script>
+</body>
+
+</html>

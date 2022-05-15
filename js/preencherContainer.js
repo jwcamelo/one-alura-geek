@@ -27,7 +27,6 @@ const preencherContainer = (container, categoria, nome) => {
       linkEditar.classList.add("card__link-editar");
       const linkExcluir = document.createElement("a");
       linkExcluir.setAttribute("href", `excluir.html?${card.nome}`);
-      linkExcluir.setAttribute("target", "_blank");
       linkExcluir.innerHTML = "Excluir";
       linkExcluir.classList.add("card__link-excluir");
       const divLink = document.createElement("div");

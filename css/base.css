@@ -30,6 +30,10 @@ label {
   width: 100%;
 }
 
+.invisible {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .container {
     padding: 1rem 2rem;

@@ -1,6 +1,9 @@
 const starwarsContainer = document.querySelector(".starwars__principal");
 const consolesContainer = document.querySelector(".consoles__principal");
 const diversosContainer = document.querySelector(".diversos__principal");
+const estaLogado = window.location.href.split("?")[1];
+const btnLogin = document.querySelector("#btn-login");
+const btnLogoff = document.querySelector("#btn-logoff");
 
 const preencherContainer = (container, categoria, nome) => {
   cards = selecionaCategoria(categoria);
@@ -40,6 +43,17 @@ const preencherContainer = (container, categoria, nome) => {
       divLink.appendChild(linkExcluir);
       divCard.appendChild(divLink);
       container.appendChild(divCard);
+
+      if (estaLogado == "true") {
+        divLink.classList.remove("invisible");
+        btnLogin.classList.add("invisible");
+        btnLogoff.classList.remove("invisible");
+
+      } else {
+        divLink.classList.add("invisible");
+        btnLogin.classList.remove("invisible");
+        btnLogoff.classList.add("invisible");
+      }
     }
   })
 };
